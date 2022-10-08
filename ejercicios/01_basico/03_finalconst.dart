@@ -4,6 +4,13 @@ main() {
   final double b = 10;
   const double c = 10;
 
+  final double z;
+  late final double x;
+  x = 10;
+  print(x);
+
+  z = 20;
+
   // a = 20;
   // b = 20;
   // c = 20;
@@ -17,7 +24,7 @@ main() {
   personasFinal.add('Maria');
   // personasConst.add('Maria');
 
-  print(personasFinal);
-  print(personasConst);
+  // print(personasFinal);
+  // print(personasConst);
 
 }
