@@ -1,8 +1,10 @@
+import 'dart:io';
+
 main() {
 
-  for(int i = 0; i <= 10; i++) {
-    print('index i: ${ 2 * 10 }');
-  }
+  // for(int i = 0; i <= 10; i++) {
+  //   print('index i: ${ 2 * 10 }');
+  // }
 
   /**
    *  Dato de entrada: La base de la tabla de multiplicar 
@@ -18,6 +20,13 @@ main() {
    *  2 * 10 = 20
    * 
    */
+
+
+  stdout.writeln('Ingrese número a calcular la tabla: ');
+  int entrada = int.parse(stdin.readLineSync() ?? '0');
+  for(int i = 1; i <= 10; i++) {
+    stdout.writeln('$entrada * $i = ${entrada * i}');
+  } 
 
 
 }
