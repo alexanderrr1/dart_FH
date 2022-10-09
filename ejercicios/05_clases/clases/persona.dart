@@ -6,6 +6,8 @@ class Persona {
   String? _bio = 'Hola, soy una propiedad privada';
 
   // Getter y Setters
+  String? get bio => _bio?.toUpperCase();
+  set bio(String? string) => _bio = string; 
 
   // Constructores
 

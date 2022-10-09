@@ -9,6 +9,8 @@ void main(List<String> args) {
     ..edad = 33;
     // ..bio = "Nació por ahí";
 
-  print(persona);
+  persona.bio = 'Cambie el valor!';
+
+  print(persona.bio);
 
 }
