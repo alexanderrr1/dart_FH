@@ -3,6 +3,7 @@ import 'clases/persona.dart';
 void main(List<String> args) {
   
   final persona = new Persona(edad: 40, nombre: 'Juan Carlos');
+  final persona2 = new Persona.persona40('Maria');
 
   // persona
     // ..nombre = 'Fernando'
@@ -11,6 +12,6 @@ void main(List<String> args) {
 
   // persona.bio = 'Cambie el valor!';
 
-  print(persona);
+  print(persona2);
 
 }
