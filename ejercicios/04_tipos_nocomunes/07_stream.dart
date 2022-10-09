@@ -2,12 +2,19 @@ import 'dart:async';
 
 void main(List<String> args) {
   
-  final streamController = new StreamController();
+  final streamController = new StreamController<String>.broadcast();
 
   streamController.stream.listen(
     (data) => print('Despegando! $data'),
     onError: (err) => print('Error! $err'),
     onDone: () => print('Misión Completa!'),
+    cancelOnError: false
+  );
+
+  streamController.stream.listen(
+    (data) => print('Despegando Stream 2! $data'),
+    onError: (err) => print('Error Stream 2! $err'),
+    onDone: () => print('Misión Completa! Stream 2!'),
     cancelOnError: false
   );
 
