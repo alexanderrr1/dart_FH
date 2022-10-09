@@ -3,7 +3,7 @@ class Persona {
   // Campos o propiedades
   String? nombre;
   int? edad;
-  String? bio;
+  String? _bio = 'Hola, soy una propiedad privada';
 
   // Getter y Setters
 
@@ -11,6 +11,6 @@ class Persona {
 
   // Métodos
   @override
-  String toString() => '$nombre $edad $bio';
+  String toString() => '$nombre $edad $_bio';
 
 }
