@@ -1,5 +1,3 @@
-import 'dart:math';
-
 void saludar( String mensaje, [String nombre = '<insertar nombre>', int edad = 20]  ) {
   print('$mensaje $nombre - $edad');
 }
