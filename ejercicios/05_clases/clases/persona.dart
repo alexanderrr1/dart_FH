@@ -10,6 +10,16 @@ class Persona {
   set bio(String? string) => _bio = string; 
 
   // Constructores
+  // Persona(int? edad , String? nombre) {
+  //   this.edad = edad;
+  //   this.nombre = nombre;
+  // }
+  Persona(
+    {
+      this.edad = 0, 
+      this.nombre = 'Sin nombre'
+    }
+  );
 
   // Métodos
   @override
