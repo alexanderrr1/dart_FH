@@ -2,5 +2,11 @@
 .dart_tool/
 .packages
 
+# Remove the following pattern if you wish to check in your lock file
+pubspect.lock
+
 # Conventional directory for build output.
 build/
+
+#directory created by dartdoc
+doc/api
