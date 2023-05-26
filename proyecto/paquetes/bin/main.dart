@@ -3,5 +3,6 @@ import 'dart:convert';
 import 'package:paquetes/paquetes.dart' as paquetes;
 
 void main(List<String> arguments) {
-  paquetes.getRequestRes_service();
+  // paquetes.getRequestRes_service();
+  paquetes.getPais();
 }
